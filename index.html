@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Better weather</title>
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=500, initial-scale=1">
+</head>
+
+<body>
+    <h1 id="mainTitle">Welcome to the weather app</h1>
+    <br>
+
+    <div class="container-fluid" id="inputWeather">
+        <p id="paragraph1"> Enter the name of a city: </p>
+
+        <input id="inputBox" type="text" name="city" placeholder="City name">
+        <br></br>
+
+
+        <div id="inputErrorMessage" style="display:none;">Please write something correct! <br></br>
+        </div>
+
+        <button id="button1" type="button" class="btn btn-secondary btn-md">Submit</button>
+        <br></br>
+    </div>
+
+    <div class="container-fluid" id="outputWeather" style="display:none;">
+        <div class="outputWeatherData">
+            <p id="location"></p>
+            <p><img id="currentWeatherIcon"></img>
+            </p>
+            <p id="currentWeather"></p>
+            <br>
+
+            <img id="currentTemperatureIcon"></img>
+            <p id="currentTemperature"></p>
+            <br>
+
+            <img id="windDirectionIcon"></img>
+            <p id="windDirection"></p>
+            <br>
+
+            <img id="humidityIcon"></img>
+            <p id="humidity"></p>
+            <br></br>
+
+            <button id="button2" type="button" class="btn btn-secondary btn-md">Back</button>
+        </div>
+    </div>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+    <footer>
+        <br></br>
+        <p>Website created by Sylvain Bechet incorporating the Open Weather Map API. <br>
+            All pictures belong to their rightful owners.
+        </p>
+    </footer>
+
+</body>
+
+
+
+</html>
